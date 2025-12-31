@@ -1,0 +1,35 @@
+###############################################################################
+# Bazel now uses Bzlmod by default to manage external dependencies.
+# Please consider migrating your external dependencies from WORKSPACE to MODULE.bazel.
+#
+# For more details, please check https://github.com/bazelbuild/bazel/issues/18958
+###############################################################################
+module(
+    name = "ember",
+    version = "0.1.0",
+)
+
+bazel_dep(name = "rules_apko", version = "1.5.29")
+bazel_dep(name = "rules_oci", version = "2.2.7")
+bazel_dep(name = "rules_pkg", version = "1.2.0")  # useful later
+
+# Required toolchains
+apko = use_extension("@rules_apko//apko:extensions.bzl", "apko")
+apko.toolchain(apko_version = "0.30.34")
+use_repo(apko, "apko_toolchains")
+
+apk = use_extension("@rules_apko//apko:extensions.bzl", "apko")
+apk.translate_lock(
+    name = "ember_apko",
+    lock = "//image:apko.lock.json",
+)
+use_repo(apk, "ember_apko")
+
+http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
+http_file(
+    name = "rke2",
+    url = "https://github.com/rancher/rke2/releases/download/v1.34.3%2Brke2r1/rke2.linux-amd64",
+    downloaded_file_path = "rke2",
+    executable = True,
+    integrity = "sha256-uDM71aceYgKghbPdzKhvcsOAkCpnV5A2CJxHmk2XfQA=",
+)

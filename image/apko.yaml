@@ -1,0 +1,43 @@
+contents:
+  repositories:
+    - https://dl-cdn.alpinelinux.org/alpine/v3.23/main
+  packages:
+    - linux-lts
+    - linux-firmware-none
+    - alpine-base
+    - util-linux
+    - kbd-bkeymaps
+    - ca-certificates
+    - tzdata
+    - busybox
+    - iproute2
+    - eudev
+    - eudev-libs
+    - dhcpcd
+    - openresolv
+    - openntpd
+    - openssh
+    - openssl
+
+accounts:
+  groups:
+    - groupname: root
+      gid: 0
+  run-as: 0
+
+paths:
+  - path: /proc
+    type: directory
+    permissions: 0555
+  - path: /sys
+    type: directory
+    permissions: 0555
+  - path: /dev
+    type: directory
+    permissions: 0755
+
+entrypoint:
+  command: /init
+
+archs:
+  - amd64

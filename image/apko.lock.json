@@ -1,0 +1,1318 @@
+{
+  "version": "v1",
+  "config": {
+    "name": "apko.yaml",
+    "checksum": "sha256-+4rebrBZLqc7EhLnGxQNMiJlTYEEZN61bYRJ7v5BV2g="
+  },
+  "contents": {
+    "keyring": [
+      {
+        "name": "alpinelinux.org/keys/alpine-devel%40lists.alpinelinux.org-6165ee59.rsa.pub",
+        "url": "https://alpinelinux.org/keys/alpine-devel%40lists.alpinelinux.org-6165ee59.rsa.pub"
+      }
+    ],
+    "build_repositories": [],
+    "runtime_repositories": [],
+    "repositories": [
+      {
+        "name": "dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/APKINDEX.tar.gz",
+        "architecture": "x86_64"
+      }
+    ],
+    "packages": [
+      {
+        "name": "alpine-baselayout-data",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/alpine-baselayout-data-3.7.1-r8.apk",
+        "version": "3.7.1-r8",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-tmtKtAj6osEAXV9A/lqR7Z9xz4M="
+        },
+        "control": {
+          "range": "bytes=722-1273",
+          "checksum": "sha1-mmCw7bRVmrJ5zwBLfmhc/XjdDBU="
+        },
+        "data": {
+          "range": "bytes=1274-10786",
+          "checksum": "sha256-zet5pWYE3+tCGvJdLI3zx5nkDXEBc0qCnMMzDlm0hIc="
+        },
+        "checksum": "Q1mmCw7bRVmrJ5zwBLfmhc/XjdDBU="
+      },
+      {
+        "name": "musl",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/musl-1.2.5-r21.apk",
+        "version": "1.2.5-r21",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-uYcRWa259rUG2eB/VHeXAQEE6MY="
+        },
+        "control": {
+          "range": "bytes=721-1248",
+          "checksum": "sha1-0Fp17BPhp6i6tWznzT3Hm9cn5pg="
+        },
+        "data": {
+          "range": "bytes=1249-413302",
+          "checksum": "sha256-32hfKEcHz6/PRvxVIe0ZMoHy8teiBw3rtr1o5uUaLt4="
+        },
+        "checksum": "Q10Fp17BPhp6i6tWznzT3Hm9cn5pg="
+      },
+      {
+        "name": "busybox",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/busybox-1.37.0-r30.apk",
+        "version": "1.37.0-r30",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-ocMKrwymImQy/Rq2viBfHJkO5ZU="
+        },
+        "control": {
+          "range": "bytes=720-2546",
+          "checksum": "sha1-8TR4AbuWsapA0X+CI3w/T/AqRyU="
+        },
+        "data": {
+          "range": "bytes=2547-504725",
+          "checksum": "sha256-ihFyyPEIV7V+d+gIUMuF+t/H9YsluNs+wafpaTwqvY0="
+        },
+        "checksum": "Q18TR4AbuWsapA0X+CI3w/T/AqRyU="
+      },
+      {
+        "name": "busybox-binsh",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/busybox-binsh-1.37.0-r30.apk",
+        "version": "1.37.0-r30",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-NfYc7Ro9ITEElAGdZQWCucrZ9OQ="
+        },
+        "control": {
+          "range": "bytes=723-1281",
+          "checksum": "sha1-GI0tARCvpY6KPj5f1CSy2Zbfegk="
+        },
+        "data": {
+          "range": "bytes=1282-1564",
+          "checksum": "sha256-eN0qLZJXLMUTrO4hpoC38JZ2HKEthhCDXyO2ZO5rPg4="
+        },
+        "checksum": "Q1GI0tARCvpY6KPj5f1CSy2Zbfegk="
+      },
+      {
+        "name": "alpine-baselayout",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/alpine-baselayout-3.7.1-r8.apk",
+        "version": "3.7.1-r8",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-OvNLzMixMVeA7SAsVN8LCJhUX5M="
+        },
+        "control": {
+          "range": "bytes=722-2027",
+          "checksum": "sha1-mhN8PI5zi8q6wTMmyfxUcvpYqvQ="
+        },
+        "data": {
+          "range": "bytes=2028-8282",
+          "checksum": "sha256-LsUUv51DH07BgqPQBZLsbUqtxawX56Z75DvKqRF6TGw="
+        },
+        "checksum": "Q1mhN8PI5zi8q6wTMmyfxUcvpYqvQ="
+      },
+      {
+        "name": "libcap2",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libcap2-2.77-r0.apk",
+        "version": "2.77-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-XWKKtS+6d9HavvmlNOJ7nXoCYAk="
+        },
+        "control": {
+          "range": "bytes=721-1317",
+          "checksum": "sha1-+/ZvDh/nOE/9LdS3X3/34CaAdWk="
+        },
+        "data": {
+          "range": "bytes=1318-21414",
+          "checksum": "sha256-QEMmQtNJV1Ynorvc2oq9kfIXJC5DS/+t8gXsdctrNYI="
+        },
+        "checksum": "Q1+/ZvDh/nOE/9LdS3X3/34CaAdWk="
+      },
+      {
+        "name": "busybox-ifupdown",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/busybox-ifupdown-1.37.0-r30.apk",
+        "version": "1.37.0-r30",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-NatTDjBd4BSo3kVErsd728c0SHo="
+        },
+        "control": {
+          "range": "bytes=722-1280",
+          "checksum": "sha1-JRGdbETz2264xcyw766By6fzWtY="
+        },
+        "data": {
+          "range": "bytes=1281-1325",
+          "checksum": "sha256-sd2Izdi/Ca8lOdCzReZHEp2P1VySttgktuzFPv1TECg="
+        },
+        "checksum": "Q1JRGdbETz2264xcyw766By6fzWtY="
+      },
+      {
+        "name": "openrc-user",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openrc-user-0.63-r1.apk",
+        "version": "0.63-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-+uYYkLE/nCq5ER53V1d12DNZoXs="
+        },
+        "control": {
+          "range": "bytes=720-1298",
+          "checksum": "sha1-QGiTCxu1VQYuq64D7sGXZXe3W5M="
+        },
+        "data": {
+          "range": "bytes=1299-5866",
+          "checksum": "sha256-CMEh7UTqKVBA2YWla7BuFZwph1OKQBu+yyeKAUqAW5s="
+        },
+        "checksum": "Q1QGiTCxu1VQYuq64D7sGXZXe3W5M="
+      },
+      {
+        "name": "openrc",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openrc-0.63-r1.apk",
+        "version": "0.63-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-OZYT79dCe5nWtlU1vrWhM8kRK3A="
+        },
+        "control": {
+          "range": "bytes=720-2407",
+          "checksum": "sha1-1FWyiJsRpKp05TNaATuSYdKbPCY="
+        },
+        "data": {
+          "range": "bytes=2408-218196",
+          "checksum": "sha256-B3lmYHT7XnNMDdjctDSQj2jPg2mPHheUwxBQkT5Qo/0="
+        },
+        "checksum": "Q11FWyiJsRpKp05TNaATuSYdKbPCY="
+      },
+      {
+        "name": "alpine-conf",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/alpine-conf-3.21.0-r0.apk",
+        "version": "3.21.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-718",
+          "checksum": "sha1-DFhswSHETSw2GhsVVdKE4JJWW6g="
+        },
+        "control": {
+          "range": "bytes=719-1472",
+          "checksum": "sha1-YTe08tES6RlqU6U2RHn3KORa/cE="
+        },
+        "data": {
+          "range": "bytes=1473-61561",
+          "checksum": "sha256-/EtJQns10MAWR05eoEkkfmubR/ervrrDIYGUBB/Ft4I="
+        },
+        "checksum": "Q1YTe08tES6RlqU6U2RHn3KORa/cE="
+      },
+      {
+        "name": "alpine-keys",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/alpine-keys-2.6-r0.apk",
+        "version": "2.6-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-6DfLljT73oA3xpWs6aRILkHswCs="
+        },
+        "control": {
+          "range": "bytes=720-1224",
+          "checksum": "sha1-XEWoIc1rhNVDu9f/EqfeGFXFzRM="
+        },
+        "data": {
+          "range": "bytes=1225-12198",
+          "checksum": "sha256-FR7/VkYnaLfln1ug+/0TLgoI8ZSxXYpKR2eypIVKP2U="
+        },
+        "checksum": "Q1XEWoIc1rhNVDu9f/EqfeGFXFzRM="
+      },
+      {
+        "name": "alpine-release",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/alpine-release-3.23.2-r0.apk",
+        "version": "3.23.2-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-r4xuG/SISymp+OL8u2wfHV2tIGg="
+        },
+        "control": {
+          "range": "bytes=721-1222",
+          "checksum": "sha1-kXFP/W4Hk01FV3f31uP+h4ePd3g="
+        },
+        "data": {
+          "range": "bytes=1223-2092",
+          "checksum": "sha256-o9hIVHXUY4xsfeLSHVI5vKmucFf/gt7frO0dKRSzlEA="
+        },
+        "checksum": "Q1kXFP/W4Hk01FV3f31uP+h4ePd3g="
+      },
+      {
+        "name": "ca-certificates-bundle",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/ca-certificates-bundle-20251003-r0.apk",
+        "version": "20251003-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-kv5PDlX/QbyivdHZqKhiKR1Q7ao="
+        },
+        "control": {
+          "range": "bytes=723-1325",
+          "checksum": "sha1-Y+vnK6efVIts3IqYlOFqkNgPQrA="
+        },
+        "data": {
+          "range": "bytes=1326-131155",
+          "checksum": "sha256-P4scXG0vRAKc1y5XL1GyKWdsw588jHLh7GUsiRiyUC4="
+        },
+        "checksum": "Q1Y+vnK6efVIts3IqYlOFqkNgPQrA="
+      },
+      {
+        "name": "libcrypto3",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libcrypto3-3.5.4-r0.apk",
+        "version": "3.5.4-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-Fiy/P2x2fvpvCp13n3Nj0Urkq5Y="
+        },
+        "control": {
+          "range": "bytes=723-1284",
+          "checksum": "sha1-rc0AJT9R+c2PdhidlKWVPaaINls="
+        },
+        "data": {
+          "range": "bytes=1285-1973042",
+          "checksum": "sha256-LHEMrL8A5hYzfcOan3bmZUjvzVfjgfUvY0u3C4wRX0M="
+        },
+        "checksum": "Q1rc0AJT9R+c2PdhidlKWVPaaINls="
+      },
+      {
+        "name": "libssl3",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libssl3-3.5.4-r0.apk",
+        "version": "3.5.4-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-5qJKvU5+P1JD+26bH9uUPgdTTzI="
+        },
+        "control": {
+          "range": "bytes=722-1290",
+          "checksum": "sha1-4yiyTakQtlKq3IckKCjUPbMLrWc="
+        },
+        "data": {
+          "range": "bytes=1291-378652",
+          "checksum": "sha256-TxbL47RzvGLvg/vhbcF4gLFYP84bd37yOS3Zy7lRPfE="
+        },
+        "checksum": "Q14yiyTakQtlKq3IckKCjUPbMLrWc="
+      },
+      {
+        "name": "zlib",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/zlib-1.3.1-r2.apk",
+        "version": "1.3.1-r2",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-dc/HsM7VYSBILp3gAIxblR1E/74="
+        },
+        "control": {
+          "range": "bytes=724-1250",
+          "checksum": "sha1-Po6Odt/vtO/SdlitpteS5muid14="
+        },
+        "data": {
+          "range": "bytes=1251-54525",
+          "checksum": "sha256-ot42L1Mt0WUdh2ObTzJ5nP64F6DzoH290JVEm6ok5wI="
+        },
+        "checksum": "Q1Po6Odt/vtO/SdlitpteS5muid14="
+      },
+      {
+        "name": "libapk",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libapk-3.0.3-r1.apk",
+        "version": "3.0.3-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-m2/fQzeOHALFJwGzFHic30suspE="
+        },
+        "control": {
+          "range": "bytes=724-1311",
+          "checksum": "sha1-F9DBjjeetBGqo+BzkjQ6LdbgmMw="
+        },
+        "data": {
+          "range": "bytes=1312-132855",
+          "checksum": "sha256-gO0cbvqlJNjRkibr1lbI0EEsPNJUrPJKoEHTwz/OzkY="
+        },
+        "checksum": "Q1F9DBjjeetBGqo+BzkjQ6LdbgmMw="
+      },
+      {
+        "name": "apk-tools",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/apk-tools-3.0.3-r1.apk",
+        "version": "3.0.3-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-YZvTpczfDPp05P5ICzBwe755SeI="
+        },
+        "control": {
+          "range": "bytes=724-1349",
+          "checksum": "sha1-svh35sn7lFwYXPNu1UYGS4s3QkU="
+        },
+        "data": {
+          "range": "bytes=1350-54555",
+          "checksum": "sha256-Nz+GJF0TuQf32Ie+AsAneQORaSTP+qem2+kEXu3iy5A="
+        },
+        "checksum": "Q1svh35sn7lFwYXPNu1UYGS4s3QkU="
+      },
+      {
+        "name": "mdev-conf",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/mdev-conf-4.9-r0.apk",
+        "version": "4.9-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-718",
+          "checksum": "sha1-k7ezprXRttLdJ0m13jW59vQ7/eY="
+        },
+        "control": {
+          "range": "bytes=719-1238",
+          "checksum": "sha1-t51Vo85Wb2nlffpTCVpG8zuO9Eg="
+        },
+        "data": {
+          "range": "bytes=1239-5251",
+          "checksum": "sha256-i1yblz2QN+p2ycbKMFRdhPCJy7aQ7rmdYqF5aQHsf0I="
+        },
+        "checksum": "Q1t51Vo85Wb2nlffpTCVpG8zuO9Eg="
+      },
+      {
+        "name": "busybox-mdev-openrc",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/busybox-mdev-openrc-1.37.0-r30.apk",
+        "version": "1.37.0-r30",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-vfDTxjb5ugVwH8egkyne27QfmGQ="
+        },
+        "control": {
+          "range": "bytes=722-1323",
+          "checksum": "sha1-XeQ0ISEJXTYCCSf31wx/iP18xQY="
+        },
+        "data": {
+          "range": "bytes=1324-2033",
+          "checksum": "sha256-sfO53NGa1XX364DeozF0a4ZVnQ2y6qLaguzkSWXU8r4="
+        },
+        "checksum": "Q1XeQ0ISEJXTYCCSf31wx/iP18xQY="
+      },
+      {
+        "name": "busybox-openrc",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/busybox-openrc-1.37.0-r30.apk",
+        "version": "1.37.0-r30",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-718",
+          "checksum": "sha1-ETyXr7dL9wp0K27v4qfxOxT536Y="
+        },
+        "control": {
+          "range": "bytes=719-1302",
+          "checksum": "sha1-jc/GNghy88+9JjkeaP194xbyxDA="
+        },
+        "data": {
+          "range": "bytes=1303-3750",
+          "checksum": "sha256-mHhXz/jrVVf5dmuYGJcOoF9Bu6S2qEy4EpjQNHS2BoA="
+        },
+        "checksum": "Q1jc/GNghy88+9JjkeaP194xbyxDA="
+      },
+      {
+        "name": "busybox-suid",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/busybox-suid-1.37.0-r30.apk",
+        "version": "1.37.0-r30",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-717",
+          "checksum": "sha1-ZRf8VYuAzGMuvekRCba0IIacItU="
+        },
+        "control": {
+          "range": "bytes=718-1286",
+          "checksum": "sha1-t77DDs0CZVtJ6kPaVjGd6IHfGGg="
+        },
+        "data": {
+          "range": "bytes=1287-3924",
+          "checksum": "sha256-QxERLy4DzDIB7rBLDMLUVVN5ezTIyuQz3oChUyfmU2A="
+        },
+        "checksum": "Q1t77DDs0CZVtJ6kPaVjGd6IHfGGg="
+      },
+      {
+        "name": "scanelf",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/scanelf-1.3.8-r2.apk",
+        "version": "1.3.8-r2",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-nb/zYv+Li+OuBpZo3IES9Aqyu6U="
+        },
+        "control": {
+          "range": "bytes=724-1302",
+          "checksum": "sha1-bqNt1E759jZPDN+r4J6hXS/b4ik="
+        },
+        "data": {
+          "range": "bytes=1303-32367",
+          "checksum": "sha256-6mckvlg8M8+cwMhrUckcFZBBcEC3ZxX5ow3nbYcoEzg="
+        },
+        "checksum": "Q1bqNt1E759jZPDN+r4J6hXS/b4ik="
+      },
+      {
+        "name": "musl-utils",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/musl-utils-1.2.5-r21.apk",
+        "version": "1.2.5-r21",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-718",
+          "checksum": "sha1-n1kr3rJQg5Wjmkm6iCRuLa7T7cg="
+        },
+        "control": {
+          "range": "bytes=719-1340",
+          "checksum": "sha1-2qeVKNLPh39tZWIHqBjUPI3qmjA="
+        },
+        "data": {
+          "range": "bytes=1341-13597",
+          "checksum": "sha256-iOoRpI6FLuh3mVGnViBH+Rw+5Q2YQq0V1jeu65j8s20="
+        },
+        "checksum": "Q12qeVKNLPh39tZWIHqBjUPI3qmjA="
+      },
+      {
+        "name": "ssl_client",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/ssl_client-1.37.0-r30.apk",
+        "version": "1.37.0-r30",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-718",
+          "checksum": "sha1-XfLGAfq+DIYxvGXHchskaAfDLm0="
+        },
+        "control": {
+          "range": "bytes=719-1321",
+          "checksum": "sha1-W27Ak5z8m+R9lnejFSxUfMGLXt0="
+        },
+        "data": {
+          "range": "bytes=1322-4680",
+          "checksum": "sha256-G3cSxyrpQSPSC6VyKLSlO/7kI8Tqx9fjQxSa4nBmKJY="
+        },
+        "checksum": "Q1W27Ak5z8m+R9lnejFSxUfMGLXt0="
+      },
+      {
+        "name": "alpine-base",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/alpine-base-3.23.2-r0.apk",
+        "version": "3.23.2-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-yaP2wzHyXpAveb58Cs3/k4jq/rw="
+        },
+        "control": {
+          "range": "bytes=720-1273",
+          "checksum": "sha1-9wLmSFCN2Lu4nD2gFiZ8n6MXJzQ="
+        },
+        "data": {
+          "range": "bytes=1274-1318",
+          "checksum": "sha256-sd2Izdi/Ca8lOdCzReZHEp2P1VySttgktuzFPv1TECg="
+        },
+        "checksum": "Q19wLmSFCN2Lu4nD2gFiZ8n6MXJzQ="
+      },
+      {
+        "name": "ca-certificates",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/ca-certificates-20251003-r0.apk",
+        "version": "20251003-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-Ti0wS2QgclsQ4Nf2EPkcfxBB/A8="
+        },
+        "control": {
+          "range": "bytes=723-1610",
+          "checksum": "sha1-OxD9M1sq+BnE/TVikA52/W6jBMU="
+        },
+        "data": {
+          "range": "bytes=1611-156446",
+          "checksum": "sha256-pFc9uIDD2lW/edSczifDwmItEwvECglfiyLpC37r5z8="
+        },
+        "checksum": "Q1OxD9M1sq+BnE/TVikA52/W6jBMU="
+      },
+      {
+        "name": "dhcpcd",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/dhcpcd-10.3.0-r0.apk",
+        "version": "10.3.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-HMdAyTKA+A8x0qqJ756a6CiczN0="
+        },
+        "control": {
+          "range": "bytes=721-1740",
+          "checksum": "sha1-enVu1PaEBxCJa63Ya7EWGbST/DQ="
+        },
+        "data": {
+          "range": "bytes=1741-168885",
+          "checksum": "sha256-wTe+2Gya8CVYGpm25/gb7EsNXUwm1GJC2/7C+GrSlwk="
+        },
+        "checksum": "Q1enVu1PaEBxCJa63Ya7EWGbST/DQ="
+      },
+      {
+        "name": "libeconf",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libeconf-0.8.0-r0.apk",
+        "version": "0.8.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-7n0BgFhupyTjdhuRidAjcPbd8MU="
+        },
+        "control": {
+          "range": "bytes=721-1275",
+          "checksum": "sha1-dcIDPJwldzpYsi3BmcsCskAkf7o="
+        },
+        "data": {
+          "range": "bytes=1276-26057",
+          "checksum": "sha256-uMcPHUCijSmj3numn9K/6U7O7WTnumh157GxjXSccnQ="
+        },
+        "checksum": "Q1dcIDPJwldzpYsi3BmcsCskAkf7o="
+      },
+      {
+        "name": "libblkid",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libblkid-2.41.2-r0.apk",
+        "version": "2.41.2-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-l76tDD7hK+XflgF/bG1QOMUNeBU="
+        },
+        "control": {
+          "range": "bytes=720-1300",
+          "checksum": "sha1-mZb4rbCj9aNsGZylyPaC08rgYD0="
+        },
+        "data": {
+          "range": "bytes=1301-94560",
+          "checksum": "sha256-mddHLrMvOg1jjRtt/ws8H2MQrTeoG5bVcvzOUNe3MRI="
+        },
+        "checksum": "Q1mZb4rbCj9aNsGZylyPaC08rgYD0="
+      },
+      {
+        "name": "xz-libs",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/xz-libs-5.8.1-r0.apk",
+        "version": "5.8.1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-CNQ9/4FlpiUEtdAVIqY9/FS+pps="
+        },
+        "control": {
+          "range": "bytes=724-1329",
+          "checksum": "sha1-ZXVX2zu9h1JHWnrR4G2kVBYZHJU="
+        },
+        "data": {
+          "range": "bytes=1330-117762",
+          "checksum": "sha256-2cLVT0t2H4zOwQAg9z/XX6P5G8pc3T0lQ2+FeS85if4="
+        },
+        "checksum": "Q1ZXVX2zu9h1JHWnrR4G2kVBYZHJU="
+      },
+      {
+        "name": "zstd-libs",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/zstd-libs-1.5.7-r2.apk",
+        "version": "1.5.7-r2",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-+IPEbSG0tqCXG2IdhCoIyLZe1dM="
+        },
+        "control": {
+          "range": "bytes=722-1309",
+          "checksum": "sha1-1Qe4rDxDNaQEBawg5JusnUNkK+Y="
+        },
+        "data": {
+          "range": "bytes=1310-373812",
+          "checksum": "sha256-R9Lnx9UbOPZMN25sRUGI2lqXBKi6syzFHFMe/UevKmE="
+        },
+        "checksum": "Q11Qe4rDxDNaQEBawg5JusnUNkK+Y="
+      },
+      {
+        "name": "kmod-libs",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/kmod-libs-34.2-r1.apk",
+        "version": "34.2-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-UnotgIukEzQVyXkb0hGXsbEnpEQ="
+        },
+        "control": {
+          "range": "bytes=720-1329",
+          "checksum": "sha1-xTWSV8W+oAJMbuC55LMSc33tEXk="
+        },
+        "data": {
+          "range": "bytes=1330-39565",
+          "checksum": "sha256-pm9TpPnhnY0miRVwWsrein5ch0kn4uLcJCvVvniwE0I="
+        },
+        "checksum": "Q1xTWSV8W+oAJMbuC55LMSc33tEXk="
+      },
+      {
+        "name": "udev-init-scripts",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/udev-init-scripts-35-r1.apk",
+        "version": "35-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-YN/EkjurBu7+l8tfi/aG8oaFXkw="
+        },
+        "control": {
+          "range": "bytes=724-1254",
+          "checksum": "sha1-7lSiP93qE3x0tL9kYO75VDl4B50="
+        },
+        "data": {
+          "range": "bytes=1255-1299",
+          "checksum": "sha256-sd2Izdi/Ca8lOdCzReZHEp2P1VySttgktuzFPv1TECg="
+        },
+        "checksum": "Q17lSiP93qE3x0tL9kYO75VDl4B50="
+      },
+      {
+        "name": "eudev",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/eudev-3.2.14-r6.apk",
+        "version": "3.2.14-r6",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-GQYF8G5Ur0dEEVRsOn2SYYh92Qg="
+        },
+        "control": {
+          "range": "bytes=723-1479",
+          "checksum": "sha1-2UUtfroqbkEmSG+mA0LwTyUG0mA="
+        },
+        "data": {
+          "range": "bytes=1480-260891",
+          "checksum": "sha256-422JDPj+EiaCix3fXJAjcdZ0eSKHk4sGyk7Itt201kA="
+        },
+        "checksum": "Q12UUtfroqbkEmSG+mA0LwTyUG0mA="
+      },
+      {
+        "name": "eudev-libs",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/eudev-libs-3.2.14-r6.apk",
+        "version": "3.2.14-r6",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-E/FDCQfIcIaXzs3OCmAkGRCA3G0="
+        },
+        "control": {
+          "range": "bytes=724-1321",
+          "checksum": "sha1-ctr4JVz/Q6YfDISBhdEUxFztUdk="
+        },
+        "data": {
+          "range": "bytes=1322-26137",
+          "checksum": "sha256-1LsctgrYDeXJqGXoL+PJXXQNbLxRK5P4aULdvSmohZE="
+        },
+        "checksum": "Q1ctr4JVz/Q6YfDISBhdEUxFztUdk="
+      },
+      {
+        "name": "libelf",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libelf-0.194-r0.apk",
+        "version": "0.194-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-kSSshW36n8/rixdOGie9po3gjDM="
+        },
+        "control": {
+          "range": "bytes=721-1320",
+          "checksum": "sha1-/YwsR9DvqKlezMHS2vu3f2yHZ1o="
+        },
+        "data": {
+          "range": "bytes=1321-43419",
+          "checksum": "sha256-8gUqICrGmAtf4HGMUdAD6IE7/oQ7X9yMKhVSI4czGS4="
+        },
+        "checksum": "Q1/YwsR9DvqKlezMHS2vu3f2yHZ1o="
+      },
+      {
+        "name": "libmnl",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libmnl-1.0.5-r2.apk",
+        "version": "1.0.5-r2",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-2OuWNnlvtr7VIPzNAsbtsr2Y5VA="
+        },
+        "control": {
+          "range": "bytes=721-1281",
+          "checksum": "sha1-kCNOzK84ww3e/hraLot1QbqY7Kk="
+        },
+        "data": {
+          "range": "bytes=1282-9026",
+          "checksum": "sha256-EoIbNq7KI+hLhgTnkB0ORj+9WXqoqZHerUideyszGhI="
+        },
+        "checksum": "Q1kCNOzK84ww3e/hraLot1QbqY7Kk="
+      },
+      {
+        "name": "iproute2-minimal",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/iproute2-minimal-6.17.0-r0.apk",
+        "version": "6.17.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-yVKbyJlFYaUt2VssWi9E60UKj2k="
+        },
+        "control": {
+          "range": "bytes=723-1321",
+          "checksum": "sha1-eTZFjXAAYp7+JjVxLLyqtGO4iV8="
+        },
+        "data": {
+          "range": "bytes=1322-273644",
+          "checksum": "sha256-zDCS074kKZAo1kLah2dlsNLUoZkRSy9MGiBtIcyfQfQ="
+        },
+        "checksum": "Q1eTZFjXAAYp7+JjVxLLyqtGO4iV8="
+      },
+      {
+        "name": "iproute2-ss",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/iproute2-ss-6.17.0-r0.apk",
+        "version": "6.17.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-Z7qZHJkyfDsWh/4o7JLilGLSyTI="
+        },
+        "control": {
+          "range": "bytes=722-1314",
+          "checksum": "sha1-7DtxPCCurozoEg8HgrqpEafYI0E="
+        },
+        "data": {
+          "range": "bytes=1315-46871",
+          "checksum": "sha256-9YLu7zmpkDwH0gsUaKe3JwymrxUUXWY8TNwd9dnZec4="
+        },
+        "checksum": "Q17DtxPCCurozoEg8HgrqpEafYI0E="
+      },
+      {
+        "name": "libxtables",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libxtables-1.8.11-r1.apk",
+        "version": "1.8.11-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-724",
+          "checksum": "sha1-1eD2akVU+lzLhU/Hmeb0w/Qqtw8="
+        },
+        "control": {
+          "range": "bytes=725-1342",
+          "checksum": "sha1-Fry5CzXUFFoJQ1gGL9/mI0Sik+0="
+        },
+        "data": {
+          "range": "bytes=1343-24650",
+          "checksum": "sha256-UydyYcnlyA2/lE6Dg+5oW4TyS/oLdzuBSuZ8msGyyVM="
+        },
+        "checksum": "Q1Fry5CzXUFFoJQ1gGL9/mI0Sik+0="
+      },
+      {
+        "name": "iproute2-tc",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/iproute2-tc-6.17.0-r0.apk",
+        "version": "6.17.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-FW/3Iuvpd1OPPahP/IoJ0V4aHvs="
+        },
+        "control": {
+          "range": "bytes=724-1339",
+          "checksum": "sha1-CglAaHPiEDhB3Grven6FJ5esO8I="
+        },
+        "data": {
+          "range": "bytes=1340-257693",
+          "checksum": "sha256-PEXhpClKzjD8giBopou7zgOxf8jkSUfF8yQa5A7cn1M="
+        },
+        "checksum": "Q1CglAaHPiEDhB3Grven6FJ5esO8I="
+      },
+      {
+        "name": "iproute2",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/iproute2-6.17.0-r0.apk",
+        "version": "6.17.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-aAlQ9vqGMOPH9WSDJrfrYdYVdJw="
+        },
+        "control": {
+          "range": "bytes=724-1478",
+          "checksum": "sha1-60GSftVgPF1JKwVP/iJYyh98KhQ="
+        },
+        "data": {
+          "range": "bytes=1479-157094",
+          "checksum": "sha256-bTLJPjpZNfKiQGGJMAPW53PrnbNSQSQ1vjt5qzAUbj0="
+        },
+        "checksum": "Q160GSftVgPF1JKwVP/iJYyh98KhQ="
+      },
+      {
+        "name": "kbd-bkeymaps",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/kbd-bkeymaps-2.8.0-r0.apk",
+        "version": "2.8.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-tJck16yoHFwfMNUIJ/aPsqhtlKw="
+        },
+        "control": {
+          "range": "bytes=721-1243",
+          "checksum": "sha1-mL/lgD20RKWfmxbAlItEh8PX9SQ="
+        },
+        "data": {
+          "range": "bytes=1244-746911",
+          "checksum": "sha256-fDEQRWFZYPP8s3F0BmeCfUyvSIrJltbLICvsFMuGFzw="
+        },
+        "checksum": "Q1mL/lgD20RKWfmxbAlItEh8PX9SQ="
+      },
+      {
+        "name": "linux-firmware-none",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/linux-firmware-none-20251125-r1.apk",
+        "version": "20251125-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-PtzkJNoZ2jm+nm8+KGNNY3ZTgnY="
+        },
+        "control": {
+          "range": "bytes=724-1295",
+          "checksum": "sha1-BM9Dv/GadTlyD0bN5UA2BCqhUh8="
+        },
+        "data": {
+          "range": "bytes=1296-1340",
+          "checksum": "sha256-sd2Izdi/Ca8lOdCzReZHEp2P1VySttgktuzFPv1TECg="
+        },
+        "checksum": "Q1BM9Dv/GadTlyD0bN5UA2BCqhUh8="
+      },
+      {
+        "name": "kmod",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/kmod-34.2-r1.apk",
+        "version": "34.2-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-wKREAZqfTJZAQB4pR72LFQ33coY="
+        },
+        "control": {
+          "range": "bytes=720-1606",
+          "checksum": "sha1-4aGmh1zVlwbtGr8XnSTccfKa02k="
+        },
+        "data": {
+          "range": "bytes=1607-64482",
+          "checksum": "sha256-n/iG6TXSRAC10+S0/l68qfXSuMwyxrBjaF8g8aYMGOA="
+        },
+        "checksum": "Q14aGmh1zVlwbtGr8XnSTccfKa02k="
+      },
+      {
+        "name": "lddtree",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/lddtree-1.27-r0.apk",
+        "version": "1.27-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-NbfyApMVYuCU9ImC8eN23hdqmhQ="
+        },
+        "control": {
+          "range": "bytes=722-1267",
+          "checksum": "sha1-hfMySF8nmO1c2L/WDJdhIj3qo0M="
+        },
+        "data": {
+          "range": "bytes=1268-5444",
+          "checksum": "sha256-h+ihmyg4L703JfqoMEcvQ1JItfFU2oXxbZZNGaOGgfo="
+        },
+        "checksum": "Q1hfMySF8nmO1c2L/WDJdhIj3qo0M="
+      },
+      {
+        "name": "device-mapper-libs",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/device-mapper-libs-2.03.35-r0.apk",
+        "version": "2.03.35-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-724",
+          "checksum": "sha1-pY9LcX/dNCg2OzNdhMVvvWGd7Ow="
+        },
+        "control": {
+          "range": "bytes=725-1305",
+          "checksum": "sha1-/zWVXRaUgw8+p3mJopCyeG2ui7w="
+        },
+        "data": {
+          "range": "bytes=1306-138240",
+          "checksum": "sha256-8AvNVNmxmUI96DODBPQkjjx++eJ+/VW0ta9vilfT+7o="
+        },
+        "checksum": "Q1/zWVXRaUgw8+p3mJopCyeG2ui7w="
+      },
+      {
+        "name": "json-c",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/json-c-0.18-r1.apk",
+        "version": "0.18-r1",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-EieiE4XV6eh85HzsYW8PLO5t6RM="
+        },
+        "control": {
+          "range": "bytes=724-1271",
+          "checksum": "sha1-Ax8KfhxfgoAMX8OfyE2vPJQAHPE="
+        },
+        "data": {
+          "range": "bytes=1272-27824",
+          "checksum": "sha256-yZyNxPybGyglwzHozchg2CB4mUxZahSr8updUWSyKqw="
+        },
+        "checksum": "Q1Ax8KfhxfgoAMX8OfyE2vPJQAHPE="
+      },
+      {
+        "name": "libuuid",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libuuid-2.41.2-r0.apk",
+        "version": "2.41.2-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-g85Uvik23LYSNCqYAjN3kgl2tDk="
+        },
+        "control": {
+          "range": "bytes=721-1297",
+          "checksum": "sha1-AFDpp2N81xWWvquZlq/Q4zVIkBY="
+        },
+        "data": {
+          "range": "bytes=1298-14255",
+          "checksum": "sha256-+Pwv8Puyo4KVQGLFuGWH1K9YFdqvPUZ8m48tHm07ZAI="
+        },
+        "checksum": "Q1AFDpp2N81xWWvquZlq/Q4zVIkBY="
+      },
+      {
+        "name": "cryptsetup-libs",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/cryptsetup-libs-2.8.1-r0.apk",
+        "version": "2.8.1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-OikUE7z3LY5MrVN1kOyqwbTLMo8="
+        },
+        "control": {
+          "range": "bytes=720-1333",
+          "checksum": "sha1-4L7ObLAwDz7YEniTggZIJncfRc4="
+        },
+        "data": {
+          "range": "bytes=1334-223018",
+          "checksum": "sha256-yUvTjNk6Dnl9/sVED/b/gXbNf10W9mSIOR5Rzc5spIk="
+        },
+        "checksum": "Q14L7ObLAwDz7YEniTggZIJncfRc4="
+      },
+      {
+        "name": "mkinitfs",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/mkinitfs-3.13.0-r0.apk",
+        "version": "3.13.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-PLVajo5pwSRVERzyGlPZX0iHtbg="
+        },
+        "control": {
+          "range": "bytes=721-2469",
+          "checksum": "sha1-Rpf1uPweJfJ2DOiufCG9tdNPxy0="
+        },
+        "data": {
+          "range": "bytes=2470-35992",
+          "checksum": "sha256-0B20//yX7kOfbn6Jn+iusJ9AHVzt/0iv6MnTRjKLPhM="
+        },
+        "checksum": "Q1Rpf1uPweJfJ2DOiufCG9tdNPxy0="
+      },
+      {
+        "name": "linux-lts",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/linux-lts-6.18.2-r0.apk",
+        "version": "6.18.2-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-kGhOdsU4BI9L2vVfiG2+nXGS4dc="
+        },
+        "control": {
+          "range": "bytes=723-1246",
+          "checksum": "sha1-nLSzSxJVIGYrFT+2OZ8CVgH9B2M="
+        },
+        "data": {
+          "range": "bytes=1247-135512670",
+          "checksum": "sha256-tt7ggui+ZcR2CMoNhDRbaO67pJpAh2DXpGY+DYVveIg="
+        },
+        "checksum": "Q1nLSzSxJVIGYrFT+2OZ8CVgH9B2M="
+      },
+      {
+        "name": "openntpd",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openntpd-6.8_p1-r11.apk",
+        "version": "6.8_p1-r11",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-sDXPDt7p7UBRCAJy6/JqMmgdsLA="
+        },
+        "control": {
+          "range": "bytes=722-1276",
+          "checksum": "sha1-7kfMweMhflumPXbcpA79DGXv/Mg="
+        },
+        "data": {
+          "range": "bytes=1277-39585",
+          "checksum": "sha256-37XSLml+/+cTjiRLqTFvffhB1hfktqhn4SIQDb9Q9Zs="
+        },
+        "checksum": "Q17kfMweMhflumPXbcpA79DGXv/Mg="
+      },
+      {
+        "name": "openresolv",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openresolv-3.17.0-r0.apk",
+        "version": "3.17.0-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-719",
+          "checksum": "sha1-pFHdANMYD0FCKV/CD90fUgO1kJQ="
+        },
+        "control": {
+          "range": "bytes=720-1265",
+          "checksum": "sha1-SAj7eAYlkhaz0NxYbv2SZpDBcsE="
+        },
+        "data": {
+          "range": "bytes=1266-19068",
+          "checksum": "sha256-rcOdVcgHW4Xtspua6Kre7je4JU+rzaHP2pRD3EO/2Yg="
+        },
+        "checksum": "Q1SAj7eAYlkhaz0NxYbv2SZpDBcsE="
+      },
+      {
+        "name": "openssh-keygen",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openssh-keygen-10.2_p1-r0.apk",
+        "version": "10.2_p1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-XzpJkb2JwPVLejrm9EHZLkBrTpA="
+        },
+        "control": {
+          "range": "bytes=723-1305",
+          "checksum": "sha1-4sDG6FkBbVqoK93GWoFMBiyUwhk="
+        },
+        "data": {
+          "range": "bytes=1306-207567",
+          "checksum": "sha256-mw1mqziQDGQ9LQCbPjNEkGv2f7pf6zO+CN+wQTfeyE0="
+        },
+        "checksum": "Q14sDG6FkBbVqoK93GWoFMBiyUwhk="
+      },
+      {
+        "name": "openssh-server-common",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openssh-server-common-10.2_p1-r0.apk",
+        "version": "10.2_p1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-GtXoiJ8G0nDFYf2GkL5oxz/IUGA="
+        },
+        "control": {
+          "range": "bytes=724-1243",
+          "checksum": "sha1-iBcfh+83oyq0bnE8ussx+xj2k90="
+        },
+        "data": {
+          "range": "bytes=1244-3190",
+          "checksum": "sha256-1JMIs1KnSic4K28Yv6KH9H3Qc1NUUuJz8tjq5xLMTVE="
+        },
+        "checksum": "Q1iBcfh+83oyq0bnE8ussx+xj2k90="
+      },
+      {
+        "name": "openssh-server",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openssh-server-10.2_p1-r0.apk",
+        "version": "10.2_p1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-g5EM3uhO8CP4SST+cX0jXPRNCGQ="
+        },
+        "control": {
+          "range": "bytes=722-1984",
+          "checksum": "sha1-9+/Oz0D/lqsCw7OXL16axT+pEpk="
+        },
+        "data": {
+          "range": "bytes=1985-987423",
+          "checksum": "sha256-ITmJfF7SFtNYy7KgHc+d/d41749QLCr1OB7yUnhDAmo="
+        },
+        "checksum": "Q19+/Oz0D/lqsCw7OXL16axT+pEpk="
+      },
+      {
+        "name": "openssh-sftp-server",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openssh-sftp-server-10.2_p1-r0.apk",
+        "version": "10.2_p1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-722",
+          "checksum": "sha1-Z6BeqHH6jm3GuPfp+rKCHJ95tnA="
+        },
+        "control": {
+          "range": "bytes=723-1257",
+          "checksum": "sha1-+pq1iT3pP32qijKRErFRz2CRSyI="
+        },
+        "data": {
+          "range": "bytes=1258-61874",
+          "checksum": "sha256-PU3Ydn2tsty4CfwhJ7W6FJ/V19klw4gxIvDVCEWFAGo="
+        },
+        "checksum": "Q1+pq1iT3pP32qijKRErFRz2CRSyI="
+      },
+      {
+        "name": "ncurses-terminfo-base",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/ncurses-terminfo-base-6.5_p20251123-r0.apk",
+        "version": "6.5_p20251123-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-gFA/g0OaM4mfOL4P57arbjD65z0="
+        },
+        "control": {
+          "range": "bytes=722-1241",
+          "checksum": "sha1-V70dgSTslX7v6iMUvfRbDtEGjO4="
+        },
+        "data": {
+          "range": "bytes=1242-21854",
+          "checksum": "sha256-aBENOUPzypcOHohF3tuPtDzU5b3EpdPhMwZttsxUcGY="
+        },
+        "checksum": "Q1V70dgSTslX7v6iMUvfRbDtEGjO4="
+      },
+      {
+        "name": "libncursesw",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libncursesw-6.5_p20251123-r0.apk",
+        "version": "6.5_p20251123-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-fy0+XxVSo5uht1LwozK/Rnw7Hfc="
+        },
+        "control": {
+          "range": "bytes=721-1295",
+          "checksum": "sha1-ZJ0wQcUrgGIPtQqY9ZedJeu+FSM="
+        },
+        "data": {
+          "range": "bytes=1296-158747",
+          "checksum": "sha256-Ja6q9VewO6SztHlwkzCJZlnhBp2AoMLTphOS/yvaQHY="
+        },
+        "checksum": "Q1ZJ0wQcUrgGIPtQqY9ZedJeu+FSM="
+      },
+      {
+        "name": "libedit",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/libedit-20251016.3.1-r0.apk",
+        "version": "20251016.3.1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-nM4VyYxl4eN+iBH80VXtcGib03M="
+        },
+        "control": {
+          "range": "bytes=722-1279",
+          "checksum": "sha1-Rj9pM1oyI7HOaFbOO+9cA/7nIb8="
+        },
+        "data": {
+          "range": "bytes=1280-76560",
+          "checksum": "sha256-xGGNeMbgDz0LO6Zo5mbsMmoVhSV+UMid4kRESxEBMN0="
+        },
+        "checksum": "Q1Rj9pM1oyI7HOaFbOO+9cA/7nIb8="
+      },
+      {
+        "name": "openssh-client-common",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openssh-client-common-10.2_p1-r0.apk",
+        "version": "10.2_p1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-CVcXjFFQgo925JuN/iUfy2XNwpQ="
+        },
+        "control": {
+          "range": "bytes=721-1365",
+          "checksum": "sha1-ZcQNh1bp4cvmzQ7Y5GLdJ/Sq5Xc="
+        },
+        "data": {
+          "range": "bytes=1366-870942",
+          "checksum": "sha256-BBRiTn7NDXV2xySlMBRpVLLr11qXbnuvuA07AtFlJYc="
+        },
+        "checksum": "Q1ZcQNh1bp4cvmzQ7Y5GLdJ/Sq5Xc="
+      },
+      {
+        "name": "openssh-client-default",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openssh-client-default-10.2_p1-r0.apk",
+        "version": "10.2_p1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-uYtDOYLU6IoDPPgPMjgvwrTj1FU="
+        },
+        "control": {
+          "range": "bytes=722-1331",
+          "checksum": "sha1-VK8JGwPQ8Di/vMFhKI5fes7GY68="
+        },
+        "data": {
+          "range": "bytes=1332-377035",
+          "checksum": "sha256-mDlR0E2H5VbwUyinwLp0jeyHown+u4FT8Rwb2sQqK64="
+        },
+        "checksum": "Q1VK8JGwPQ8Di/vMFhKI5fes7GY68="
+      },
+      {
+        "name": "openssh",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openssh-10.2_p1-r0.apk",
+        "version": "10.2_p1-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-721",
+          "checksum": "sha1-KlYWYj2Ck0pxusYVXT5mPi2aKUw="
+        },
+        "control": {
+          "range": "bytes=722-1293",
+          "checksum": "sha1-cX8/h7qI0aL/K6aQ9fln1xy+To8="
+        },
+        "data": {
+          "range": "bytes=1294-140135",
+          "checksum": "sha256-nBcS2vOpP/3QHJ4pRuf1gscfh1hlAUls0kmcMehPX2w="
+        },
+        "checksum": "Q1cX8/h7qI0aL/K6aQ9fln1xy+To8="
+      },
+      {
+        "name": "openssl",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/openssl-3.5.4-r0.apk",
+        "version": "3.5.4-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-720",
+          "checksum": "sha1-1M+TgFrt5KjWjl7ulQDV45HE8u4="
+        },
+        "control": {
+          "range": "bytes=721-1325",
+          "checksum": "sha1-wqlPqbAz+KEGbjVFy+a06G5U6bg="
+        },
+        "data": {
+          "range": "bytes=1326-339479",
+          "checksum": "sha256-sVRwvcf3mjfpGATBGr5nLYcewgXM5lEdq2mdpsdRDQI="
+        },
+        "checksum": "Q1wqlPqbAz+KEGbjVFy+a06G5U6bg="
+      },
+      {
+        "name": "tzdata",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/tzdata-2025c-r0.apk",
+        "version": "2025c-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-723",
+          "checksum": "sha1-nUn++1FeeJ50lFoOtofXHCdB1UI="
+        },
+        "control": {
+          "range": "bytes=724-1215",
+          "checksum": "sha1-4GfO0IszYh7a7BtSx4HqNNqc5ZY="
+        },
+        "data": {
+          "range": "bytes=1216-187242",
+          "checksum": "sha256-BQleYrE2aQQsSUuIZJ6F1yvQwZZo1xR5vAfdSkc4S0c="
+        },
+        "checksum": "Q14GfO0IszYh7a7BtSx4HqNNqc5ZY="
+      },
+      {
+        "name": "util-linux",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/main/x86_64/util-linux-2.41.2-r0.apk",
+        "version": "2.41.2-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "bytes=0-726",
+          "checksum": "sha1-V1ntyVKy07lfbaURgwrpoa8xXps="
+        },
+        "control": {
+          "range": "bytes=727-1304",
+          "checksum": "sha1-F7ttAIW6s0amTNG2NWVh0G+qpVI="
+        },
+        "data": {
+          "range": "bytes=1305-1540",
+          "checksum": "sha256-esQBPncyKL1BukfUEmY1pT26b9hpECIqT0XBFuo2iyA="
+        },
+        "checksum": "Q1F7ttAIW6s0amTNG2NWVh0G+qpVI="
+      }
+    ]
+  }
+}
