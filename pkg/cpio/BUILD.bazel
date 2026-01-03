@@ -1,0 +1,8 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cpio",
+    srcs = ["tar.go", "writer.go"],
+    importpath = "github.com/hxtk/ember/pkg/cpio",
+    visibility = ["//visibility:public"],
+)

@@ -1,0 +1,4 @@
+# gazelle:prefix github.com/hxtk/ember
+load("@gazelle//:def.bzl", "gazelle")
+
+gazelle(name = "gazelle")

@@ -1,0 +1,9 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "oci",
+    srcs = ["ociwalk.go"],
+    importpath = "github.com/hxtk/ember/pkg/oci",
+    visibility = ["//visibility:public"],
+    deps = ["//vendor/github.com/opencontainers/image-spec/specs-go/v1:specs-go"],
+)

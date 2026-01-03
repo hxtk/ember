@@ -1,5 +1,8 @@
 filegroup(
     name = "root",
-    srcs = glob(["**/*"], exclude=["BUILD.bazel"]),
+    srcs = glob(
+        ["**/*"],
+        exclude = ["BUILD.bazel"],
+    ),
     visibility = ["//image:__pkg__"],
 )

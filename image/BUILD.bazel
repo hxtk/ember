@@ -5,7 +5,7 @@ load("@rules_pkg//pkg:tar.bzl", "pkg_tar")
 pkg_tar(
     name = "rootfs",
     srcs = ["//root"],
-    package_dir = "/", # Destination directory in the image
+    package_dir = "/",  # Destination directory in the image
 )
 
 apko_lock(
@@ -16,10 +16,10 @@ apko_lock(
 
 apko_image(
     name = "base",
+    architecture = "amd64",
     config = "apko.yaml",
     contents = "@ember_apko//:contents",
     tag = "latest",
-    architecture = "amd64",
 )
 
 pkg_tar(
@@ -31,10 +31,10 @@ pkg_tar(
 oci_image(
     name = "image",
     base = ":base",
+    entrypoint = ["/init"],
     tars = [
         ":rootfs",
         ":rke2_tar",
     ],
-    entrypoint = ["/init"],
     visibility = ["//visibility:public"],
 )

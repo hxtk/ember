@@ -1,0 +1,18 @@
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "oci2cpio_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/hxtk/ember/cmd/oci2cpio",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//pkg/cpio",
+        "//pkg/oci",
+    ],
+)
+
+go_binary(
+    name = "oci2cpio",
+    embed = [":oci2cpio_lib"],
+    visibility = ["//visibility:public"],
+)

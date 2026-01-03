@@ -12,6 +12,8 @@ module(
 bazel_dep(name = "rules_apko", version = "1.5.29")
 bazel_dep(name = "rules_oci", version = "2.2.7")
 bazel_dep(name = "rules_pkg", version = "1.2.0")  # useful later
+bazel_dep(name = "rules_go", version = "0.59.0")
+bazel_dep(name = "gazelle", version = "0.45.0")
 
 # Required toolchains
 apko = use_extension("@rules_apko//apko:extensions.bzl", "apko")
@@ -24,6 +26,9 @@ apk.translate_lock(
     lock = "//image:apko.lock.json",
 )
 use_repo(apk, "ember_apko")
+
+go_sdk = use_extension("@rules_go//go:extensions.bzl", "go_sdk")
+go_sdk.from_file(go_mod = "//:go.mod")
 
 http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
 http_file(
