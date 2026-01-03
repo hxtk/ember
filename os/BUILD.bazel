@@ -1,0 +1,7 @@
+load("//rules:cpio.bzl", "oci2cpio")
+
+oci2cpio(
+    name = "initrd",
+    oci = "//image",
+    out = "initrd.cpio",
+)
