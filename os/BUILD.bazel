@@ -1,7 +1,23 @@
 load("//rules:cpio.bzl", "oci2cpio")
+load("//rules:kernel.bzl", "kernel_config", "kernel_build")
 
 oci2cpio(
     name = "initrd",
     oci = "//image",
     out = "initrd.cpio",
+)
+
+kernel_config(
+    name = "uki_config",
+    config = "linux.config",
+    cmdline = "console=ttys0 selinux=1",
+    initramfs = ":initrd",
+)
+
+kernel_build(
+    name = "uki",
+    srcs = "@linux_kernel//:linux_src",
+    config = ":uki_config",
+    arch = "x86_64",
+    out = "BOOTX64.EFI",
 )
