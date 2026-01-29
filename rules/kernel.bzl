@@ -1,4 +1,5 @@
 load("@rules_cc//cc:find_cc_toolchain.bzl", "find_cc_toolchain")
+load("@rules_foreign_cc//toolchains/native_tools:tool_access.bzl", "get_make_data")
 
 KernelConfigInfo = provider(
     doc = "Resolved kernel .config",
@@ -64,6 +65,7 @@ kernel_config = rule(
 
 def _kernel_build_impl(ctx):
     cc = find_cc_toolchain(ctx)
+    make_data = get_make_data(ctx)
 
     tools = {
         "CC": cc.compiler_executable,
@@ -81,7 +83,8 @@ def _kernel_build_impl(ctx):
 
     config = ctx.attr.config[KernelConfigInfo].config
 
-    make_env = ["{}={}".format(k, v) for k, v in tools.items()]
+    make_env = ["{}=$EXT_BUILD_ROOT/{}".format(k, v) for k, v in tools.items()]
+    make_env += ["MAKE="+make_data.path]
 
     root = ctx.files.srcs[0].dirname
 
@@ -94,15 +97,16 @@ set -euo pipefail
 export ARCH={arch}
 export KCONFIG_NOTIMESTAMP=1
 export SOURCE_DATE_EPOCH=1
+export EXT_BUILD_ROOT=$PWD
+export {make_env}
 
 cp -a {src}/* {workdir}
 chmod -R u+w {workdir}
 cp {config} {workdir}/.config
 cd {workdir}
 
-
-make olddefconfig
-make -j$(nproc) {make_env}
+{make} olddefconfig {make_env}
+{make} -j$(nproc) {make_env}
 
 cp arch/{arch}/boot/bzImage {out}
 """.format(
@@ -112,6 +116,7 @@ cp arch/{arch}/boot/bzImage {out}
             workdir = workdir.path,
             out = out.path,
             make_env = " ".join(make_env),
+            make = make_data.path,
         ),
     )
 
@@ -123,12 +128,12 @@ cp arch/{arch}/boot/bzImage {out}
         "SOURCE_DATE_EPOCH": "1",
     }
 
-    print(config.path)
+    make_info = make_data.target[DefaultInfo]
     ctx.actions.run(
         executable = script,
         inputs = depset(
             direct = [config] + ctx.files.srcs,
-            transitive = [cc.all_files],
+            transitive = [cc.all_files, make_info.files],
         ),
         outputs = [out, workdir],
         env = env,
@@ -151,5 +156,8 @@ kernel_build = rule(
         "arch": attr.string(mandatory = True),
         "out": attr.output(mandatory = True),
     },
-    toolchains = ["@bazel_tools//tools/cpp:toolchain_type"],
+    toolchains = [
+        "@bazel_tools//tools/cpp:toolchain_type",
+        "@rules_foreign_cc//toolchains:make_toolchain",
+    ],
 )
